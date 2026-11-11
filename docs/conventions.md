@@ -9,12 +9,15 @@ Code, comments, commit messages and the files in docs/ are written in English.
 
 ## Code style
 
-TODO: the formatter and linter used, and the few rules they do not cover.
+- Formatting: 2 spaces, UTF-8, LF line endings (enforced by .editorconfig).
+- Tailwind CSS utility classes used for styling.
+- Meaningful variable and function names.
 
 ## Branches
 
-TODO: for example main is always working; one branch per task, named feature/<short-name>.
+- `main` is always working and deployable.
+- Feature branches named `feature/<short-name>`.
 
 ## Commit messages
 
-TODO: for example one line in the imperative, under 72 characters: "Add login form validation".
+- One line in the imperative mood, under 72 characters (e.g., "Add login page markup with Tailwind").

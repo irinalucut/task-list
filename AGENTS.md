@@ -1,13 +1,13 @@
-# TODO: project name
+# Task List
 
-TODO: one or two sentences. What the project is and who uses it.
+Task List is a to-do web application with user accounts, task management, and administration. It helps users organize tasks and allows administrators to manage users.
 
 ## Non-standard
-- TODO: only what an agent could not guess, for example "everything runs in
-  Docker" or "Yarn 4 with node_modules". Delete this section if there is nothing.
+- Yarn 4 with node_modules.
 
 ## Structure
-TODO: folders, not files. Example: app/ front end · api/ server · database/ SQL
+- src/ application source code
+- docs/ project memory, conventions, specs
 
 ## Where to look
 - docs/state.md: first, in every session

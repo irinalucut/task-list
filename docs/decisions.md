@@ -15,4 +15,12 @@ Rejected: the alternatives considered and why they lost.
 
 ## Entries
 
-TODO: add the first decision here.
+## 2026-11-11: Client-side architecture without API
+Decision: Build the application entirely client-side without a backend API or complex build tooling.
+Why: Lightweight, runs directly in the browser, fast to iterate for course exercises.
+Rejected: Backend server/API setup (unnecessary complexity for the current scope).
+
+## 2026-11-11: Styling with Tailwind CSS
+Decision: Use Tailwind CSS for interface styling.
+Why: Rapid UI prototyping with consistent design directly in markup.
+Rejected: Plain custom CSS (harder to maintain consistency) and heavy component libraries.

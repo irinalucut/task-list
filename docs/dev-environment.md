@@ -8,22 +8,33 @@ give both versions.
 
 ## Requirements
 
-TODO: what must be installed, with versions (for example Docker Desktop, Git).
+- A modern web browser (Chrome, Firefox, Safari, or Edge)
+- Optional: a simple local static server (e.g. VS Code Live Server or `npx serve`)
 
 ## Start
 
-```
-TODO: the commands that start the project
+Open `index.html` or `login.html` directly in the browser:
+
+```sh
+open login.html
 ```
 
-TODO: the address where it opens (for example http://localhost:5173).
+On Windows:
+
+```cmd
+start login.html
+```
+
+Or using any static HTTP server:
+
+```sh
+npx serve .
+```
 
 ## Stop
 
-```
-TODO: the commands that stop it
-```
+Close the browser tab or press `Ctrl + C` in the static server terminal.
 
 ## Common problems
 
-TODO: problems that actually happened, each with its fix.
+- Styles not loading offline: ensure an active internet connection if Tailwind CDN is used.

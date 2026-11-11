@@ -13,4 +13,4 @@ pull request or making a release.
 
 ## Releases
 
-TODO: how a version is released or deployed, if the project has that step.
+- Releases and deployment (e.g. GitHub Pages) trigger on merge to the main branch.

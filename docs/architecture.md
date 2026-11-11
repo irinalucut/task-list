@@ -5,15 +5,18 @@ parts talk to each other. Describe the shape, not every file.
 
 ## Parts
 
-TODO: one line per part: what it is responsible for.
+- Frontend UI: Standalone client pages (Login, Task List, Admin) styled with Tailwind CSS.
+- Client Auth & State: Client-side session and data management in localStorage (no backend API).
+- Task Management: In-browser CRUD operations for tasks.
+- Admin Section: User management interface for administrator role.
 
 ## How they connect
 
-TODO: who calls whom, and through what (HTTP, a function call, a queue, a file).
+- UI events update local state and browser storage directly without an external API.
 
 ## Data
 
-TODO: where data lives and who is allowed to change it.
+- Stored in browser localStorage (user accounts, current session, tasks list).
 
 ## What does not belong here
 
