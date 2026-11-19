@@ -8,33 +8,72 @@ give both versions.
 
 ## Requirements
 
+- Docker and Docker Compose (e.g. Docker Desktop)
 - A modern web browser (Chrome, Firefox, Safari, or Edge)
-- Optional: a simple local static server (e.g. VS Code Live Server or `npx serve`)
+- Note: Node and Yarn are not installed on the host; they run only in the container.
 
 ## Start
 
-Open `index.html` or `login.html` directly in the browser:
+Start the application container in the background:
 
 ```sh
-open login.html
+docker compose up -d
 ```
 
-On Windows:
+On Windows (cmd / PowerShell):
 
 ```cmd
-start login.html
+docker compose up -d
 ```
 
-Or using any static HTTP server:
+Or run in the foreground to view logs directly:
 
 ```sh
-npx serve .
+docker compose up
 ```
+
+The application is available at:
+
+http://localhost:5173
 
 ## Stop
 
-Close the browser tab or press `Ctrl + C` in the static server terminal.
+Stop the application container:
+
+```sh
+docker compose down
+```
+
+On Windows (cmd / PowerShell):
+
+```cmd
+docker compose down
+```
+
+(Or press `Ctrl + C` if running in the foreground).
+
+## Running Yarn commands
+
+Node and Yarn run only inside the container. To run any Yarn command, use `docker compose exec app`:
+
+```sh
+docker compose exec app yarn <command>
+```
+
+On Windows (cmd / PowerShell):
+
+```cmd
+docker compose exec app yarn <command>
+```
+
+Examples:
+
+```sh
+docker compose exec app yarn build
+docker compose exec app yarn install
+```
 
 ## Common problems
 
-- Styles not loading offline: ensure an active internet connection if Tailwind CDN is used.
+- Port 5173 is already in use: ensure no other process or container is using port 5173.
+- Docker daemon is not running: start Docker Desktop before running compose commands.

@@ -3,6 +3,7 @@
 Task List is a to-do web application with user accounts, task management, and administration. It helps users organize tasks and allows administrators to manage users.
 
 ## Non-standard
+- Node and Yarn run only in the container, via docker compose exec app.
 - Yarn 4 with node_modules.
 
 ## Structure
@@ -18,5 +19,6 @@ Task List is a to-do web application with user accounts, task management, and ad
 - docs/conventions.md: before you write code or commit
 - docs/workflow.md: before you open a pull request or release
 - docs/decisions.md: before you reopen a decision
+- docs/mockups/: screen mockups, before you build a page
 - docs/specs/: the spec, before you build anything
 - docs/ai-log.md: the human's own AI log; read it, never edit it
